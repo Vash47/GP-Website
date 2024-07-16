@@ -90,12 +90,14 @@
                 <div class="address">Via San Vitale, 58 (BO)</div>
             </div>
             <div class="fourm">
-                <form name="contact" action="POST" data-netlify="true" onsubmit="submit">
+                <form name="contact" action="POST" data-netlify="true" data-netlify-recaptcha="true" onsubmit="submit">
                     <input type="text" id="lastname" name="lastname" placeholder="Last Name">
                     <input type="text" id="firstname" name="firstname" placeholder="First Name">
                     <input type="email" id="email" name="email" placeholder="Email">
                     <input type="tel" id="tel" name="tel" placeholder="Phone Number(Optional)">
                     <textarea name="comment" placeholder="Message"></textarea>
+                    <input type="hidden" name="form-name" value="contact">
+                    <div data-netlify-recaptcha="true"></div>
                     <input type="submit" value="submit">
                 </form>
             </div>
