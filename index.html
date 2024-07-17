@@ -92,10 +92,10 @@
             <div class="fourm">
                 <form name="contact" action="POST" data-netlify="true" onsubmit="submit">
                 <form name="contact" action="POST" data-netlify="true" data-netlify-recaptcha="true" onsubmit="submit">
-                    <input type="text" id="lastname" name="lastname" placeholder="Last Name">
-                    <input type="text" id="firstname" name="firstname" placeholder="First Name">
-                    <input type="email" id="email" name="email" placeholder="Email">
-                    <input type="tel" id="tel" name="tel" placeholder="Phone Number(Optional)">
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Email is invalid '@'">>
+                    <input type="tel" id="tel" name="tel" placeholder="Phone Number(Optional)" pattern="^\+[1-9]{1}[0-9]{3,14}$">
                     <textarea name="comment" placeholder="Message"></textarea>
                     <input type="hidden" name="form-name" value="contact">
                     <div data-netlify-recaptcha="true"></div>
