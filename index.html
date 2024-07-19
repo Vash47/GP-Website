@@ -94,7 +94,7 @@
                     <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
                     <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
                     <input type="email" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                    <input type="tel" id="tel" name="tel" placeholder="Phone Number(Optional)">
+                    <input type="tel" id="tel" name="tel" placeholder="Phone Number(Optional)" pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$" required>
                     <textarea name="message" placeholder="Message" required></textarea>
                     <input type="hidden" name="form-name" value="contact">
                     <div data-netlify-recaptcha="true"></div>
