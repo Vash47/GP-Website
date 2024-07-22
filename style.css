@@ -45,6 +45,25 @@ body {
     color: #fff;
 }
 
+.navbar ul button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F22B73;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.navbar ul button:hover {
+    background-color: #0056b3;
+
+}
+
+
 .hero {
     background-color: rgba(242, 43, 115, 0.1);
     width: 100vw;
@@ -101,6 +120,7 @@ body {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: larger;
 }
 
 .hero button:hover {
